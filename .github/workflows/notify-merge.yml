@@ -13,5 +13,5 @@ jobs:
           curl -X POST \
             -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://github.com/cheating-at-solitaire/repro-one.git \
+            https://api.github.com/repos/cheating-at-solitaire/repro-three/dispatches \
             -d '{"event_type":"source-updated","client_payload":{"source_repo":"${{ github.repository }}"}}'
